@@ -1,0 +1,12 @@
+.home {
+    height: calc(100vh - 32px);
+    background-color: $brown-light;
+
+    .site {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+}

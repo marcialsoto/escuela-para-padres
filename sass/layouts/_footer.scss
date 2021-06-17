@@ -1,0 +1,57 @@
+footer {
+    background-color: $brown-light;
+    color: $brown;
+    text-align: center;
+
+    a,
+    a:visited,
+    a:focus {
+        color: $brown;
+
+    }
+
+    .social-icons-footer {
+
+        font-size: 18px;
+        
+        .facebook:hover {
+            color: #1877f2;
+        }
+    
+        .instagram:hover {
+            color: #c32aa3;
+        }
+    
+        .youtube:hover {
+            color: #ff0000;
+        }
+
+    }
+
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 18px;
+    right: 15px;
+    text-decoration: none;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #25d366;
+    border-radius: 60px;
+
+    i {
+        color: white;
+        font-size: 24px;
+    }
+
+    &:hover {
+        background-color: #128c7e;
+
+        i {
+            color: #dcf8c6;
+        }
+    }
+}

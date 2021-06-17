@@ -1,0 +1,86 @@
+.gform_fields {
+    .gfield {
+        .ginput_container input[type="text"],
+        .ginput_container textarea,
+        .ginput_container input[type="file"] {
+            @extend .form-control;
+            @extend .form-control-sm;
+    
+            padding: 0.25rem 0.5rem !important;
+
+            &.large {
+                @extend .form-control-lg;
+
+                padding: 0.5rem 1rem !important;
+                font-size: 1.25rem !important;
+            }
+        }
+
+        .ginput_container textarea {
+            height: 6rem;
+        }
+    
+        .ginput_container select  {
+            @extend .form-select;
+            @extend .form-select-sm;
+    
+            padding: 0.25rem 0.5rem !important;
+        }
+
+        &.mt-0 {
+            .ginput_container {
+                margin: 0 !important;
+            }
+        }
+
+        &.field_description_below .gfield_description {
+            padding-top: 8px;
+        }
+    }
+}
+
+.form_block {
+    .gform_footer {
+        @extend .d-grid;
+        
+        .gform_button {
+            @extend .btn;
+            @extend .btn-secondary;
+            @extend .btn-lg;
+    
+            margin: 0 !important;
+            font-size: 1.25rem !important;
+            // border-radius: 42px !important;
+        }
+    }
+}
+
+.form_registro {    
+    background: rgba($primary, 0.35);
+    padding: 0.25rem 1rem .5rem;
+    border-radius: 0.2rem;
+
+    .gform_footer {
+        @extend .d-grid;
+        
+        .gform_button {
+            @extend .btn;
+            @extend .btn-primary;
+            @extend .btn-lg;
+    
+            // border-radius: 42px !important;
+        }
+    }
+}
+
+.d-label-none {
+    label {
+        display: none !important;
+    }
+}
+
+.w-100 {
+    input {
+        width: 100% !important;
+    }
+}
